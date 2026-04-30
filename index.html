@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — Bharathi Dairy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --bg: #ffffff;
+      --bg-subtle: #f9f9f9;
+      --border: #e8e8e8;
+      --border-strong: #d0d0d0;
+      --text-primary: #111111;
+      --text-secondary: #555555;
+      --text-tertiary: #999999;
+      --accent: #fd8000;
+      --accent-subtle: #fff8f0;
+      --accent-border: #fde0b8;
+      --purple: #373275;
+      --green-bg: #f0fdf4;
+      --green-check: #16a34a;
+      --font: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      --font-mono: 'DM Mono', 'SF Mono', monospace;
+    }
+
+    html {
+      font-size: 16px;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: var(--font);
+      background: var(--bg);
+      color: var(--text-primary);
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(255, 255, 255, 0.90);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav-inner {
+      max-width: 740px;
+      margin: 0 auto;
+      padding: 0 28px;
+      height: 58px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+    }
+
+    .brand-logo {
+      width: 32px;
+      height: 32px;
+      border-radius: 8px;
+      object-fit: cover;
+      display: block;
+      border: 1px solid var(--border);
+    }
+
+    .brand-text {
+      display: flex;
+      flex-direction: column;
+      line-height: 1;
+      gap: 3px;
+    }
+
+    .brand-name {
+      font-size: 13.5px;
+      font-weight: 700;
+      color: var(--purple);
+      letter-spacing: -0.2px;
+    }
+
+    .brand-sub {
+      font-size: 9px;
+      font-weight: 600;
+      color: var(--accent);
+      letter-spacing: 2px;
+      font-family: var(--font-mono);
+    }
+
+    .nav-tag {
+      font-size: 11.5px;
+      color: var(--text-tertiary);
+      font-family: var(--font-mono);
+    }
+
+    .hero {
+      max-width: 740px;
+      margin: 0 auto;
+      padding: 72px 28px 52px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .hero-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 22px;
+    }
+
+    .eyebrow-line {
+      width: 18px;
+      height: 1.5px;
+      background: var(--accent);
+      border-radius: 2px;
+    }
+
+    .eyebrow-text {
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--accent);
+      letter-spacing: 2.2px;
+      font-family: var(--font-mono);
+    }
+
+    .hero h1 {
+      font-size: clamp(30px, 5vw, 42px);
+      font-weight: 700;
+      color: var(--text-primary);
+      letter-spacing: -1.4px;
+      line-height: 1.08;
+      margin-bottom: 20px;
+    }
+
+    .hero-meta {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .meta-item {
+      font-size: 12.5px;
+      color: var(--text-tertiary);
+      font-family: var(--font-mono);
+    }
+
+    .meta-sep {
+      margin: 0 12px;
+      color: var(--border-strong);
+    }
+
+    .toc-wrap {
+      max-width: 740px;
+      margin: 0 auto;
+      padding: 32px 28px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .toc {
+      background: var(--bg-subtle);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 22px 26px;
+    }
+
+    .toc-label {
+      font-size: 10.5px;
+      font-weight: 600;
+      color: var(--text-tertiary);
+      letter-spacing: 1.8px;
+      font-family: var(--font-mono);
+      margin-bottom: 16px;
+    }
+
+    .toc-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2px 32px;
+      list-style: none;
+    }
+
+    .toc-grid li a {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 13px;
+      color: var(--text-secondary);
+      text-decoration: none;
+      padding: 7px 0;
+      transition: color 0.15s;
+    }
+
+    .toc-grid li a:hover { color: var(--accent); }
+
+    .toc-n {
+      font-family: var(--font-mono);
+      font-size: 10.5px;
+      color: var(--text-tertiary);
+      min-width: 20px;
+    }
+
+    .content {
+      max-width: 740px;
+      margin: 0 auto;
+      padding: 0 28px 96px;
+    }
+
+    .section {
+      padding: 52px 0;
+      border-bottom: 1px solid var(--border);
+      opacity: 0;
+      transform: translateY(14px);
+      transition: opacity 0.45s ease, transform 0.45s ease;
+    }
+
+    .section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .section:last-child { border-bottom: none; }
+
+    .section-head {
+      display: flex;
+      align-items: baseline;
+      gap: 18px;
+      margin-bottom: 28px;
+    }
+
+    .s-num {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      color: var(--text-tertiary);
+      min-width: 22px;
+    }
+
+    .s-title {
+      font-size: 19px;
+      font-weight: 650;
+      color: var(--text-primary);
+      letter-spacing: -0.5px;
+    }
+
+    .s-body { padding-left: 40px; }
+
+    .s-body p {
+      font-size: 15px;
+      color: var(--text-secondary);
+      line-height: 1.78;
+      margin-bottom: 18px;
+      font-weight: 400;
+    }
+
+    .s-body p:last-child { margin-bottom: 0; }
+
+    .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 24px 0;
+      font-size: 14px;
+    }
+
+    .data-table thead tr { border-bottom: 1px solid var(--border-strong); }
+
+    .data-table th {
+      text-align: left;
+      font-size: 10.5px;
+      font-weight: 600;
+      color: var(--text-tertiary);
+      letter-spacing: 1.4px;
+      font-family: var(--font-mono);
+      padding: 0 16px 12px 0;
+    }
+
+    .data-table th:last-child { text-align: right; padding-right: 0; }
+
+    .data-table tbody tr { border-bottom: 1px solid var(--border); }
+    .data-table tbody tr:last-child { border-bottom: none; }
+
+    .data-table td {
+      padding: 15px 16px 15px 0;
+      color: var(--text-secondary);
+      vertical-align: top;
+      line-height: 1.55;
+    }
+
+    .data-table td:first-child {
+      font-weight: 600;
+      color: var(--text-primary);
+      width: 32%;
+      font-size: 13.5px;
+    }
+
+    .data-table td:last-child { text-align: right; padding-right: 0; }
+
+    .pill {
+      display: inline-block;
+      background: var(--bg-subtle);
+      border: 1px solid var(--border);
+      color: var(--text-secondary);
+      font-size: 10.5px;
+      font-weight: 600;
+      font-family: var(--font-mono);
+      padding: 3px 9px;
+      border-radius: 4px;
+    }
+
+    .callout {
+      background: var(--accent-subtle);
+      border: 1px solid var(--accent-border);
+      border-left: 2px solid var(--accent);
+      border-radius: 8px;
+      padding: 16px 20px;
+      margin: 22px 0;
+    }
+
+    .callout p {
+      font-size: 13.5px !important;
+      color: #7c3809 !important;
+      line-height: 1.65 !important;
+      margin: 0 !important;
+    }
+
+    .feat-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin: 22px 0;
+    }
+
+    .feat-card {
+      background: var(--bg-subtle);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 18px 20px;
+      transition: border-color 0.2s;
+    }
+
+    .feat-card:hover { border-color: var(--border-strong); }
+
+    .feat-label {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 6px;
+    }
+
+    .feat-desc {
+      font-size: 13px;
+      color: var(--text-tertiary);
+      line-height: 1.55;
+    }
+
+    .service-list {
+      margin: 22px 0;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .service-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px 20px;
+      border-bottom: 1px solid var(--border);
+      gap: 20px;
+    }
+
+    .service-row:last-child { border-bottom: none; }
+
+    .service-name {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text-primary);
+      margin-bottom: 3px;
+    }
+
+    .service-desc {
+      font-size: 12.5px;
+      color: var(--text-tertiary);
+      line-height: 1.45;
+    }
+
+    .service-tag {
+      font-size: 10.5px;
+      font-weight: 600;
+      font-family: var(--font-mono);
+      padding: 4px 10px;
+      border-radius: 20px;
+      background: var(--bg-subtle);
+      border: 1px solid var(--border);
+      color: var(--text-secondary);
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+
+    .sec-list {
+      list-style: none;
+      margin: 22px 0;
+    }
+
+    .sec-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      padding: 13px 0;
+      border-bottom: 1px solid var(--border);
+      font-size: 14px;
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+
+    .sec-list li:last-child { border-bottom: none; }
+
+    .sec-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--accent);
+      flex-shrink: 0;
+      margin-top: 8px;
+    }
+
+    .rights-list {
+      list-style: none;
+      margin: 22px 0;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .rights-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      padding: 16px 20px;
+      border-bottom: 1px solid var(--border);
+      font-size: 14px;
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+
+    .rights-list li:last-child { border-bottom: none; }
+    .rights-list li strong { color: var(--text-primary); font-weight: 600; }
+
+    .r-check {
+      width: 18px;
+      height: 18px;
+      background: var(--green-bg);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .r-check svg {
+      width: 10px;
+      height: 10px;
+      stroke: var(--green-check);
+      stroke-width: 2.5;
+      fill: none;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .contact-card {
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      overflow: hidden;
+      margin-top: 22px;
+    }
+
+    .contact-header {
+      padding: 14px 20px;
+      background: var(--bg-subtle);
+      border-bottom: 1px solid var(--border);
+      font-size: 10.5px;
+      font-weight: 600;
+      color: var(--text-tertiary);
+      letter-spacing: 1.6px;
+      font-family: var(--font-mono);
+    }
+
+    .contact-row {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      padding: 16px 20px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .contact-row:last-child { border-bottom: none; }
+
+    .c-icon {
+      width: 34px;
+      height: 34px;
+      background: var(--bg-subtle);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .c-icon svg {
+      width: 15px;
+      height: 15px;
+      stroke: var(--text-tertiary);
+      fill: none;
+      stroke-width: 1.6;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .c-label {
+      font-size: 11px;
+      color: var(--text-tertiary);
+      font-weight: 500;
+      margin-bottom: 3px;
+      font-family: var(--font-mono);
+      letter-spacing: 0.5px;
+    }
+
+    .c-value {
+      font-size: 14px;
+      color: var(--text-primary);
+      font-weight: 500;
+    }
+
+    .c-value a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .c-value a:hover { text-decoration: underline; }
+
+    footer {
+      border-top: 1px solid var(--border);
+      background: var(--bg-subtle);
+    }
+
+    .footer-inner {
+      max-width: 740px;
+      margin: 0 auto;
+      padding: 28px 28px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .footer-left {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+
+    .footer-brand {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--purple);
+    }
+
+    .footer-copy {
+      font-size: 12px;
+      color: var(--text-tertiary);
+    }
+
+    .footer-links { display: flex; gap: 24px; }
+
+    .footer-links a {
+      font-size: 12.5px;
+      color: var(--text-tertiary);
+      text-decoration: none;
+      transition: color 0.15s;
+    }
+
+    .footer-links a:hover { color: var(--text-primary); }
+
+    @media (max-width: 580px) {
+      .hero { padding: 48px 20px 40px; }
+      .toc-wrap, .content { padding-left: 20px; padding-right: 20px; }
+      .toc-grid { grid-template-columns: 1fr; }
+      .feat-grid { grid-template-columns: 1fr; }
+      .s-body { padding-left: 0; }
+      .nav-inner { padding: 0 20px; }
+      .data-table th:last-child,
+      .data-table td:last-child { text-align: left; }
+      .service-row { flex-direction: column; align-items: flex-start; gap: 10px; }
+      .footer-inner { flex-direction: column; align-items: flex-start; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="nav-inner">
+      <a class="brand" href="#">
+        <img src="logo.png" alt="Bharathi Dairy" class="brand-logo" />
+        <div class="brand-text">
+          <span class="brand-name">Bharathi Dairy</span>
+          <span class="brand-sub">DAIRY PRODUCTS</span>
+        </div>
+      </a>
+      <span class="nav-tag">Privacy Policy</span>
+    </div>
+  </nav>
+
+  <div class="hero">
+    <div class="hero-eyebrow">
+      <div class="eyebrow-line"></div>
+      <span class="eyebrow-text">LEGAL</span>
+    </div>
+    <h1>Privacy Policy</h1>
+    <div class="hero-meta">
+      <span class="meta-item">Bharathi Dairy App</span>
+      <span class="meta-sep">/</span>
+      <span class="meta-item">Effective April 30, 2026</span>
+      <span class="meta-sep">/</span>
+      <span class="meta-item">Last updated April 30, 2026</span>
+    </div>
+  </div>
+
+  <div class="toc-wrap">
+    <div class="toc">
+      <div class="toc-label">TABLE OF CONTENTS</div>
+      <ul class="toc-grid">
+        <li><a href="#s1"><span class="toc-n">01</span>Introduction</a></li>
+        <li><a href="#s2"><span class="toc-n">02</span>Information We Collect</a></li>
+        <li><a href="#s3"><span class="toc-n">03</span>How We Use Information</a></li>
+        <li><a href="#s4"><span class="toc-n">04</span>Third-Party Services</a></li>
+        <li><a href="#s5"><span class="toc-n">05</span>Data Security</a></li>
+        <li><a href="#s6"><span class="toc-n">06</span>Your Rights</a></li>
+        <li><a href="#s7"><span class="toc-n">07</span>Contact Us</a></li>
+        <li><a href="#s8"><span class="toc-n">08</span>Changes to Policy</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="content">
+
+    <div class="section" id="s1">
+      <div class="section-head">
+        <span class="s-num">01</span>
+        <h2 class="s-title">Introduction</h2>
+      </div>
+      <div class="s-body">
+        <p>Bharathi Dairy is a milk delivery and subscription service. We built this app so our customers can place orders, manage subscriptions, and stay on top of their daily dairy needs — simply and reliably.</p>
+        <p>We understand that sharing personal information requires trust. This Privacy Policy explains in plain language what data we collect when you use our app, why we collect it, and exactly how it is used. Nothing is collected beyond what is described here.</p>
+        <p>By creating an account and using the Bharathi Dairy app, you agree to the practices described in this policy. If you have any questions, you are always welcome to reach out to us directly.</p>
+      </div>
+    </div>
+
+    <div class="section" id="s2">
+      <div class="section-head">
+        <span class="s-num">02</span>
+        <h2 class="s-title">Information We Collect</h2>
+      </div>
+      <div class="s-body">
+        <p>We collect only what is necessary to provide the service. The table below lists every category of data we collect and why it is required.</p>
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Data Type</th>
+              <th>Details</th>
+              <th>Required</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Full Name</td>
+              <td>Provided during registration, used to identify your account</td>
+              <td><span class="pill">Required</span></td>
+            </tr>
+            <tr>
+              <td>Phone Number</td>
+              <td>10-digit mobile number for account login and delivery contact</td>
+              <td><span class="pill">Required</span></td>
+            </tr>
+            <tr>
+              <td>Delivery Address</td>
+              <td>Street address provided by you to receive your orders</td>
+              <td><span class="pill">Required</span></td>
+            </tr>
+            <tr>
+              <td>Order History</td>
+              <td>Records of products ordered, quantities, and delivery schedules</td>
+              <td><span class="pill">Automatic</span></td>
+            </tr>
+            <tr>
+              <td>Login Credentials</td>
+              <td>Username and securely hashed password for account authentication</td>
+              <td><span class="pill">Required</span></td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="callout">
+          <p>We do not collect payment card details, government identification numbers, GPS location data, browsing history, or any sensitive personal data beyond what is listed above.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section" id="s3">
+      <div class="section-head">
+        <span class="s-num">03</span>
+        <h2 class="s-title">How We Use Your Information</h2>
+      </div>
+      <div class="s-body">
+        <p>Every piece of data we collect has a specific, legitimate purpose. We do not use your information for advertising, and we do not build profiles to share with marketers.</p>
+        <div class="feat-grid">
+          <div class="feat-card">
+            <div class="feat-label">Order Processing</div>
+            <div class="feat-desc">Your name, address, and phone number are used to prepare and dispatch your daily dairy orders accurately.</div>
+          </div>
+          <div class="feat-card">
+            <div class="feat-label">Delivery Management</div>
+            <div class="feat-desc">Your delivery address is shared with our delivery team solely to ensure your products arrive at the right location.</div>
+          </div>
+          <div class="feat-card">
+            <div class="feat-label">Customer Support</div>
+            <div class="feat-desc">We use your contact details to respond to queries, resolve complaints, and handle order-related issues.</div>
+          </div>
+          <div class="feat-card">
+            <div class="feat-label">Order Notifications</div>
+            <div class="feat-desc">We April send order confirmations and delivery updates via WhatsApp or SMS to your registered phone number.</div>
+          </div>
+        </div>
+        <p>We do not share your information with any third party except as described in this policy. Your data is never sold or rented.</p>
+      </div>
+    </div>
+
+    <div class="section" id="s4">
+      <div class="section-head">
+        <span class="s-num">04</span>
+        <h2 class="s-title">Third-Party Services</h2>
+      </div>
+      <div class="s-body">
+        <p>We work with a small number of trusted third-party services to keep the app running. These providers only receive the minimum data needed to carry out their specific function.</p>
+        <div class="service-list">
+          <div class="service-row">
+            <div>
+              <div class="service-name">Firebase — Google</div>
+              <div class="service-desc">Backend infrastructure including authentication, database, and cloud storage</div>
+            </div>
+            <span class="service-tag">Optional</span>
+          </div>
+          <div class="service-row">
+            <div>
+              <div class="service-name">WhatsApp Business API</div>
+              <div class="service-desc">Used to send order confirmations and delivery status updates to your registered phone number</div>
+            </div>
+            <span class="service-tag">Notifications</span>
+          </div>
+          <div class="service-row">
+            <div>
+              <div class="service-name">Bharathi Dairy Backend</div>
+              <div class="service-desc">Our own server handles authentication, order management, and all core app logic — hosted and managed entirely by us</div>
+            </div>
+            <span class="service-tag">Primary</span>
+          </div>
+        </div>
+        <p>Any service provider we engage is required to handle your data responsibly and is not permitted to use it for any purpose outside of what we have authorized.</p>
+      </div>
+    </div>
+
+    <div class="section" id="s5">
+      <div class="section-head">
+        <span class="s-num">05</span>
+        <h2 class="s-title">Data Security</h2>
+      </div>
+      <div class="s-body">
+        <p>We take reasonable and practical measures to protect your personal information from unauthorized access, loss, or misuse.</p>
+        <ul class="sec-list">
+          <li><div class="sec-dot"></div><span>Passwords are stored using one-way hashing. We never store your password in plain text and have no ability to read it.</span></li>
+          <li><div class="sec-dot"></div><span>All data transmitted between the app and our servers is encrypted using HTTPS and TLS protocols.</span></li>
+          <li><div class="sec-dot"></div><span>Access to user data within our team is strictly limited to staff who require it to operate the service.</span></li>
+          <li><div class="sec-dot"></div><span>We do not store any payment information. Financial transactions, where applicable, are handled by secure third-party payment gateways.</span></li>
+        </ul>
+        <p>While we take every reasonable precaution, no system is entirely immune to risk. In the event of a security breach affecting your personal information, we will notify you promptly.</p>
+      </div>
+    </div>
+
+    <div class="section" id="s6">
+      <div class="section-head">
+        <span class="s-num">06</span>
+        <h2 class="s-title">Your Rights</h2>
+      </div>
+      <div class="s-body">
+        <p>Your data belongs to you. At any point, you have the right to take the following actions regarding your personal information.</p>
+        <ul class="rights-list">
+          <li>
+            <div class="r-check"><svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg></div>
+            <span><strong>Access</strong> — Request a copy of the personal information we hold about you.</span>
+          </li>
+          <li>
+            <div class="r-check"><svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg></div>
+            <span><strong>Correction</strong> — Ask us to correct any information that is inaccurate or out of date.</span>
+          </li>
+          <li>
+            <div class="r-check"><svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg></div>
+            <span><strong>Deletion</strong> — Request that we delete your account and all associated personal data. We will process this within 7 business days.</span>
+          </li>
+          <li>
+            <div class="r-check"><svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg></div>
+            <span><strong>Opt-out</strong> — Unsubscribe from promotional or notification messages at any time through the app settings or by contacting us.</span>
+          </li>
+          <li>
+            <div class="r-check"><svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg></div>
+            <span><strong>Portability</strong> — Request your data in a readable, portable format if you wish to take it elsewhere.</span>
+          </li>
+        </ul>
+        <p>To exercise any of these rights, contact us using the details in the section below. We will respond within a few business days.</p>
+      </div>
+    </div>
+
+    <div class="section" id="s7">
+      <div class="section-head">
+        <span class="s-num">07</span>
+        <h2 class="s-title">Contact Us</h2>
+      </div>
+      <div class="s-body">
+        <p>If you have any questions about this policy, wish to exercise your data rights, or want to speak with us about how your information is handled, please reach out using the details below.</p>
+        <div class="contact-card">
+          <div class="contact-header">CONTACT INFORMATION</div>
+          <div class="contact-row">
+            <div class="c-icon">
+              <svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="2,4 12,13 22,4"/></svg>
+            </div>
+            <div>
+              <div class="c-label">EMAIL</div>
+              <div class="c-value"><a href="mailto:bharathidairyofficial@gmail.com">bharathidairyofficial@gmail.com</a></div>
+            </div>
+          </div>
+          <div class="contact-row">
+            <div class="c-icon">
+              <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9,22 9,12 15,12 15,22"/></svg>
+            </div>
+            <div>
+              <div class="c-label">BUSINESS</div>
+              <div class="c-value">Bharathi Dairy Products</div>
+            </div>
+          </div>
+          <div class="contact-row">
+            <div class="c-icon">
+              <svg viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+            </div>
+            <div>
+              <div class="c-label">PLATFORM</div>
+              <div class="c-value">Bharathi Dairy — available on Google Play Store</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section" id="s8">
+      <div class="section-head">
+        <span class="s-num">08</span>
+        <h2 class="s-title">Changes to This Policy</h2>
+      </div>
+      <div class="s-body">
+        <p>We April update this Privacy Policy from time to time as our service evolves or as legal requirements change. When meaningful changes are made, we will notify you through the app or by updating the effective date at the top of this page.</p>
+        <p>We will not make changes that reduce your privacy rights without giving you clear notice beforehand. Continued use of the app following any update constitutes acceptance of the revised policy. If you disagree with a change, you April delete your account or contact us to discuss your concerns.</p>
+        <div class="callout">
+          <p>This policy was last updated on <strong>April 30, 2026</strong>. Previous versions are available on request by emailing us directly.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-left">
+        <span class="footer-brand">Bharathi Dairy</span>
+        <span class="footer-copy">© 2026 Bharathi Dairy Products. All rights reserved.</span>
+      </div>
+      <div class="footer-links">
+        <a href="mailto:bharathidairyofficial@outlook.com">Contact</a>
+        <a href="#">Terms</a>
+        <a href="#">Privacy</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const observer = new IntersectionObserver(
+      (entries) => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }),
+      { threshold: 0.07, rootMargin: '0px 0px -32px 0px' }
+    );
+    document.querySelectorAll('.section').forEach(s => observer.observe(s));
+  </script>
+
+</body>
+</html>
